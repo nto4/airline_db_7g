@@ -18,18 +18,20 @@
     # for the full list
     'category': 'Uncategorized',
     'version': '0.1',
-
+    'installable': True,
+    'auto_install': False,
     # any module necessary for this one to work correctly
     'depends': ['base'],
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+        'security/ir.model.access.csv',
+        'views/airline_alliance_view.xml',
+        'views/airline_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
     ],
+    
 }
